@@ -14,10 +14,13 @@
             align-items: center;
             height: 100vh;
             color: white;
+            background-image: url('/images/login-2.jpg');
+            background-size: cover;
         }
         .login-container {
             background: rgba(255, 255, 255, 0.1);
             padding: 40px;
+            width: 250px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -52,11 +55,12 @@
         .login-container input[type="submit"]:hover {
             background-color: #218838;
         }
+          
     </style>
     </head>
     <body>
         <div class="login-container">
-            <h1>CARTEIRA DIGITAL</h1>
+            <h3>CARTEIRA DIGITAL</h3>
             <h2>LOGIN</h2>
             <form action="/user/signin" method="post">
                 <input type="text" name="phoneNumber"
@@ -64,6 +68,7 @@
                     required>
                 <input type="password" name="password" placeholder="Senha"
                     required>
+                <br><br>
                 <input type="submit" value="ENTRAR">
             </form>
         </div>
